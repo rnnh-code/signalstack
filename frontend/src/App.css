@@ -1,0 +1,116 @@
+/* SignalStack App Styling */
+:root {
+  --primary-color: #1e88e5;
+  --primary-dark: #1976d2;
+  --secondary-color: #26a69a;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #616161;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+  --danger-color: #f44336;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* Layout and Typography */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark-gray);
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+}
+
+/* Search Page Specific */
+.search-page {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.search-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: 2rem 0;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Results Page Specific */
+.results-page {
+  padding: 1rem 0;
+}
+
+.trend-card {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.2s;
+}
+
+.trend-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation */
+@keyframes loading {
+  0% { width: 0; }
+  50% { width: 50%; }
+  100% { width: 100%; }
+}
